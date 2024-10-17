@@ -1,9 +1,10 @@
+G:
 cd %DEV_BASE%
 call SetEnvironmentVariables.bat
 call InitializeBoost.bat
 cd %DEV_BASE%
 if not exist %GDAL_DIR% git clone https://github.com/gajgeospatial/gdal-3.6.4.git %GDAL_DIR% & cd %GDAL_DIR% & call MakeBuildDirectories_vs2022.bat
-cd %DEV_BASE
+cd %DEV_BASE%
 
 if not exist %SQLITE3_DIR% git clone https://github.com/gajgeospatial/sqlite-3.42.0.git %SQLITE3_DIR%
 devenv %SQLITE3_DIR%\sqlite.sln /Build vs2022_Debug

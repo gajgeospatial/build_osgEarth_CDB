@@ -1,5 +1,5 @@
-SET DEV_BASE=D:\Development\Dev_Base
-SET BOOST_DIR=D:\Development\3rd_Party
+SET DEV_BASE=G:\Development\Dev_Base
+SET BOOST_DIR=G:\Development\3rd_Party\boost_1_81_0
 SET SQLITE3_DIR=sqlite-3.42.0
 SET ZLIB_DIR=zlib-1.2.13
 SET WEBP_DIR=libwebp-1.3.0
