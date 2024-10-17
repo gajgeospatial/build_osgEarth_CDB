@@ -1,5 +1,6 @@
 SETX DEV_BASE G:\Development\Dev_Base /M
 SETX BOOST_DIR G:\Development\3rd_Party\boost_1_81_0 /M
+SETX BOOST_VER 1_81 /M
 SETX SQLITE3_DIR sqlite-3.42.0 /M
 SETX ZLIB_DIR zlib-1.2.13 /M
 SETX WEBP_DIR libwebp-1.3.0 /M
