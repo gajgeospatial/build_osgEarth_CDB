@@ -15,8 +15,8 @@ devenv %ZLIB_DIR%\zlib.sln /Build vs2022_Debug
 devenv %ZLIB_DIR%\zlib.sln /Build vs2022_Release
 
 if not exist %WEBP_DIR% git clone https://github.com/gajgeospatial/libwebp-1.3.0.git %WEBP_DIR%
-devenv %WEBP_DIR%\msvc\WebP.sln /Build vs2022_Debug /Project libwebp
-devenv %WEBP_DIR%\msvc\WebP.sln /Build vs2022_Release /Project libwebp
+devenv %WEBP_DIR%\msvc\WebP.sln /Build vs2022_Debug /Project webp
+devenv %WEBP_DIR%\msvc\WebP.sln /Build vs2022_Release /Project webp
 
 if not exist %LIBLZMA_DIR% git clone https://github.com/gajgeospatial/liblzma-5.2.5.git %LIBLZMA_DIR%
 devenv %LIBLZMA_DIR%\windows\xz_win.sln /Build vs2022_Debug
@@ -37,6 +37,11 @@ devenv %TIFF_DIR%\msvc\tiff.sln /Build vs2022_Release
 if not exist %PNG_DIR% git clone https://github.com/gajgeospatial/libpng-1.6.40.git %PNG_DIR%
 devenv %PNG_DIR%\projects\vstudio\libpng.sln /Build vs2022_Debug
 devenv %PNG_DIR%\projects\vstudio\libpng.sln /Build vs2022_Release
+
+if not exist %GIF_DIR% git clone https://github.com/gajgeospatial/giflib-5.0.4.git %GIF_DIR%
+devenv %GIF_DIR%\build.vc11\giflib-5.0.4.sln /Build vs2022_Debug
+devenv %GIF_DIR%\build.vc11\giflib-5.0.4.sln /Build vs2022_Release
+
 
 if not exist %WEBP_DIR% git clone https://github.com/gajgeospatial/libwebp-1.3.0.git %WEBP_DIR%
 devenv %WEBP_DIR%\msvc\WebP.sln /Build vs2022_Debug
@@ -78,6 +83,10 @@ devenv %PROJ_DIR%\msvc\PROJ.sln /Build vs2022_Release
 if not exist %PIXMAN_DIR% git clone https://github.com/gajgeospatial/pixman-0.35.0.git %PIXMAN_DIR%
 devenv %PIXMAN_DIR%\pixman.sln /Build vs2022_Debug
 devenv %PIXMAN_DIR%\pixman.sln /Build vs2022_Release
+
+if not exist %BZIP2_DIR% git clone https://github.com/gajgeospatial/bzip2-1.0.6.git %BZIP2_DIR%
+devenv %BZIP2_DIR%\libbz2.sln /Build vs2022_Debug
+devenv %BZIP2_DIR%\libbz2.sln /Build vs2022_Release
 
 if not exist %FREETYPE_DIR% git clone https://github.com/gajgeospatial/freetype-2.13.0.git %FREETYPE_DIR%
 devenv %FREETYPE_DIR%\msvc\freetype.sln /Build vs2022_Debug
@@ -160,10 +169,6 @@ devenv %COLLADA_DOM_DIR%\msvc\collada-dom.sln /Build vs2022_Release
 if not exist %DCMTK_DIR% git clone https://github.com/gajgeospatial/dcmtk-3.6.0.git %DCMTK_DIR%
 devenv %DCMTK_DIR%\msvc\DCMTK.sln /Build vs2022_Debug
 devenv %DCMTK_DIR%\msvc\DCMTK.sln /Build vs2022_Release
-
-if not exist %GIF_DIR% git clone https://github.com/gajgeospatial/giflib-5.0.4.git %GIF_DIR%
-devenv %GIF_DIR%\build.vc11\giflib-5.0.4.sln /Build vs2022_Debug
-devenv %GIF_DIR%\build.vc11\giflib-5.0.4.sln /Build vs2022_Release
 
 if not exist %HDF4_DIR% git clone https://github.com/gajgeospatial/hdf-4.2.16.git %HDF4_DIR%
 devenv %HDF4_DIR%\msvc\HDF4.sln /Build vs2022_Debug
