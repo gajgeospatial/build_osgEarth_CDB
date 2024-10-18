@@ -96,6 +96,10 @@ if not exist %ICONV_DIR% git clone https://github.com/gajgeospatial/win-iconv-1.
 devenv %ICONV_DIR%\msvc\win_iconv.sln /Build vs2022_Debug
 devenv %ICONV_DIR%\msvc\win_iconv.sln /Build vs2022_Release
 
+if not exist %EXPAT_DIR% git clone https://github.com/gajgeospatial/expat-2.5.0 %EXPAT_DIR%
+devenv %EXPAT_DIR%\msvc\expat.sln /Build vs2022_Debug
+devenv %EXPAT_DIR%\msvc\expat.sln /Build vs2022_Release
+
 if not exist %FREEXL_DIR% git clone https://github.com/gajgeospatial/freexl-2.0.0.git %FREEXL_DIR%
 devenv %FREEXL_DIR%\freexl.sln /Build vs2022_Debug
 devenv %FREEXL_DIR%\freexl.sln /Build vs2022_Release
@@ -104,13 +108,13 @@ if not exist %CAIRO_DIR% git clone https://github.com/gajgeospatial/cairo-1.17.2
 devenv %CAIRO_DIR%\cairo.sln /Build vs2022_Debug
 devenv %CAIRO_DIR%\cairo.sln /Build vs2022_Release
 
+if not exist %GTEST_DIR% git clone https://github.com/gajgeospatial/googletest-1.14.0.git %GTEST_DIR%
+devenv %GTEST_DIR%\msvc\googletest-distribution.sln /Build vs2022_Debug
+devenv %GTEST_DIR%\msvc\googletest-distribution.sln /Build vs2022_Release
+
 if not exist %URIPARSER_DIR% git clone https://github.com/gajgeospatial/uriparser-0.9.7.git %URIPARSER_DIR%
 devenv %URIPARSER_DIR%\msvc\uriparser.sln /Build vs2022_Debug
 devenv %URIPARSER_DIR%\msvc\uriparser.sln /Build vs2022_Release
-
-if not exist %EXPAT_DIR% git clone https://github.com/gajgeospatial/expat-2.5.0 %EXPAT_DIR%
-devenv %EXPAT_DIR%\msvc\expat.sln /Build vs2022_Debug
-devenv %EXPAT_DIR%\msvc\expat.sln /Build vs2022_Release
 
 if not exist %LIBKML_DIR% git clone https://github.com/gajgeospatial/libkml-1.3.0.git %LIBKML_DIR%
 devenv %LIBKML_DIR%\msvc\libkml.sln /Build vs2022_Debug
