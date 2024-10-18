@@ -202,7 +202,7 @@ if not exist %JSON_DIR% git clone https://github.com/gajgeospatial/json-c-0.16.g
 devenv %JSON_DIR%\msvc\json-c.sln /Build vs2022_Debug
 devenv %JSON_DIR%\msvc\json-c.sln /Build vs2022_Release
 
-if not exist %BLOSC_DIR% git clone >https://github.com/gajgeospatial/blosc-1.21.2 %BLOSC_DIR%
+if not exist %BLOSC_DIR% git clone https://github.com/gajgeospatial/blosc-1.21.2 %BLOSC_DIR%
 devenv %BLOSC_DIR%\msvc\blosc.sln /Build vs2022_Debug
 devenv %BLOSC_DIR%\msvc\blosc.sln /Build vs2022_Release
 
