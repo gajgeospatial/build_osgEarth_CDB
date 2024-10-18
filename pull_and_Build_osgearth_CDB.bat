@@ -190,13 +190,17 @@ if not exist %SPATIALITE_DIR% git clone https://github.com/gajgeospatial/libspat
 devenv %SPATIALITE_DIR%\libspatialite.sln /Build vs2022_Debug
 devenv %SPATIALITE_DIR%\libspatialite.sln /Build vs2022_Release
 
-if not exist %SPATIALINDEX_DIR% git clone https://github.com/gajgeospatial/spatialindex-1.8.1.git %SPATIALINDEX_DIR%
+if not exist %SPATIALINDEX_DIR% git clone https://github.com/gajgeospatial/spatialindex-1.9.3.git %SPATIALINDEX_DIR%
 devenv %SPATIALINDEX_DIR%\msvc\spatialindex.sln /Build vs2022_Debug
 devenv %SPATIALINDEX_DIR%\msvc\spatialindex.sln /Build vs2022_Release
 
 if not exist %SDL2_DIR% git clone https://github.com/gajgeospatial/sdl2-2.0.3.git %SDL2_DIR%
 devenv %SDL2_DIR%\VisualC\SDL_VS2013.sln /Build vs2022_Debug
 devenv %SDL2_DIR%\VisualC\SDL_VS2013.sln /Build vs2022_Release
+
+if not exist %JSON_DIR% git clone https://github.com/gajgeospatial/json-c-0.16.git %JSON_DIR%
+devenv %JSON_DIR%\msvc\json-c.sln /Build vs2022_Debug
+devenv %JSON_DIR%\msvc\json-c.sln /Build vs2022_Release
 
 if not exist %GDAL_DIR% git clone https://github.com/gajgeospatial/gdal-3.6.4.git %GDAL_DIR%
 devenv %GDAL_DIR%\msvc\gdal.sln /Build vs2022_Debug

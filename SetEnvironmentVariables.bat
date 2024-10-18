@@ -3,6 +3,7 @@ SET BOOST_DIR=D:\Development\3rd_Party\boost_1_86_0
 SET BOOST_VER=1_86
 SET BZIP2_DIR=bzip2-1.0.6
 SET GTEST_DIR=googletest-1.14.0
+SET JSON_DIR=json-c-0.16
 SET SQLITE3_DIR=sqlite-3.42.0
 SET ZLIB_DIR=zlib-1.2.13
 SET WEBP_DIR=libwebp-1.3.0
