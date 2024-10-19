@@ -218,6 +218,10 @@ if not exist %DEFLATE_DIR% git clone https://github.com/gajgeospatial/libdeflate
 devenv %DEFLATE_DIR%\msvc\libdeflate.sln /Build vs2022_Debug
 devenv %DEFLATE_DIR%\msvc\libdeflate.sln /Build vs2022_Release
 
+if not exist %QHULL_DIR% git clone https://github.com/gajgeospatial/qhull-8.1-alpha1.git %QHULL_DIR%
+devenv %QHULL_DIR%\msvc\qhull.sln /Build vs2022_Debug
+devenv %QHULL_DIR%\msvc\qhull.sln /Build vs2022_Release
+
 if not exist %GDAL_DIR% git clone https://github.com/gajgeospatial/gdal-3.6.4.git %GDAL_DIR%
 devenv %GDAL_DIR%\msvc\gdal.sln /Build vs2022_Debug
 devenv %GDAL_DIR%\msvc\gdal.sln /Build vs2022_Release

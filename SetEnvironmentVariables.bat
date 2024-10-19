@@ -6,6 +6,7 @@ SET GTEST_DIR=googletest-1.14.0
 SET JSON_DIR=json-c-0.16
 SET BLOSC_DIR=blosc-1.21.2
 SET LERC_DIR=lerc-4.0.0
+SET QHULL_DIR=qhull-8.1-alpha1
 SET CRYPTOPP_DIR=cryptopp-8.7.0p
 SET DEFLATE_DIR=libdeflate-1.18
 SET SQLITE3_DIR=sqlite-3.42.0
