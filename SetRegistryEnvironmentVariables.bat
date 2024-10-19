@@ -5,6 +5,9 @@ SETX BZIP2_DIR bzip2-1.0.6 /M
 SETX GTEST_DIR googletest-1.14.0 /M
 SETX JSON_DIR json-c-0.16 /M
 SETX BLOSC_DIR blosc-1.21.2 /M
+SETX LERC_DIR lerc-4.0.0 /M
+SETX CRYPTOPP_DIR cryptopp-8.7.0p /M
+SETX DEFLATE_DIR libdeflate-1.18 /M
 SETX SQLITE3_DIR sqlite-3.42.0 /M
 SETX ZLIB_DIR zlib-1.2.13 /M
 SETX WEBP_DIR libwebp-1.3.0 /M

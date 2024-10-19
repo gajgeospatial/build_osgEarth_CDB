@@ -206,6 +206,18 @@ if not exist %BLOSC_DIR% git clone https://github.com/gajgeospatial/blosc-1.21.2
 devenv %BLOSC_DIR%\msvc\blosc.sln /Build vs2022_Debug
 devenv %BLOSC_DIR%\msvc\blosc.sln /Build vs2022_Release
 
+if not exist %LERC_DIR% git clone https://github.com/gajgeospatial/lerc-4.0.0.git %LERC_DIR%
+devenv %LERC_DIR%\msvc\Lerc.sln /Build vs2022_Debug
+devenv %LERC_DIR%\msvc\Lerc.sln /Build vs2022_Release
+
+if not exist %CRYPTOPP_DIR% git clone https://github.com/gajgeospatial/cryptopp-8.7.0p %CRYPTOPP_DIR%
+devenv %CRYPTOPP_DIR%\cryptest.sln /Build vs2022_Debug
+devenv %CRYPTOPP_DIR%\cryptest.sln /Build vs2022_Release
+
+if not exist %DEFLATE_DIR% git clone https://github.com/gajgeospatial/libdeflate-1.18.git %DEFLATE_DIR%
+devenv %DEFLATE_DIR%\msvc\libdeflate.sln /Build vs2022_Debug
+devenv %DEFLATE_DIR%\msvc\libdeflate.sln /Build vs2022_Release
+
 if not exist %GDAL_DIR% git clone https://github.com/gajgeospatial/gdal-3.6.4.git %GDAL_DIR%
 devenv %GDAL_DIR%\msvc\gdal.sln /Build vs2022_Debug
 devenv %GDAL_DIR%\msvc\gdal.sln /Build vs2022_Release
