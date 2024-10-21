@@ -234,7 +234,7 @@ if not exist %OPENEXR_DIR% git clone https://github.com/gajgeospatial/openexr-3.
 devenv %OPENEXR_DIR%\msvc\OpenEXR.sln /Build vs2022_Debug
 devenv %OPENEXR_DIR%\msvc\OpenEXR.sln /Build vs2022_Release
 
-if not exist %LUA52_DIR% git clone  %LUA52_DIR%
+if not exist %LUA52_DIR% git clone https://github.com/gajgeospatial/lua-5.1.4 %LUA52_DIR%
 devenv %LUA52_DIR%\msvc\lua.sln /Build vs2022_Debug
 devenv %LUA52_DIR%\msvc\lua.sln /Build vs2022_Release
 
