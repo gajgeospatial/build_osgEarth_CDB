@@ -258,6 +258,11 @@ if not exist %POCO_DIR% git clone https://github.com/gajgeospatial/poco-1.11.1.g
 devenv %POCO_DIR%\msvc\Poco.sln /Build vs2022_Debug
 devenv %POCO_DIR%\msvc\Poco.sln /Build vs2022_Release
 
+if not exist %PROTOBUF_DIR% git clone https://github.com/gajgeospatial/protobuf-3.7.1.git %PROTOBUF_DIR%
+devenv %PROTOBUF_DIR%\msvc\protobuf.sln /Build vs2022_Debug
+devenv %PROTOBUF_DIR%\msvc\protobuf.sln /Build vs2022_Release
+
+
 if not exist %OSGEARTH_DIR% git clone https://github.com/gajgeospatial/osgearth-3.0.0_CDB %OSGEARTH_DIR%
 devenv %OSGEARTH_DIR%\msvc\OSGEARTH.sln /Build vs2022_Debug
 devenv %OSGEARTH_DIR%\msvc\OSGEARTH.sln /Build vs2022_Release

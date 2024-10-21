@@ -10,6 +10,7 @@ SETX CRYPTOPP_DIR cryptopp-8.7.0p /M
 SETX DEFLATE_DIR libdeflate-1.18 /M
 SETX QHULL_DIR qhull-8.1-alpha1 /M
 SETX LIBZIP_DIR libzip-1.10.0 /M
+SETX PROTOBUF_DIR protobuf-3.7.1 /M
 SETX SQLITE3_DIR sqlite-3.42.0 /M
 SETX ZLIB_DIR zlib-1.2.13 /M
 SETX WEBP_DIR libwebp-1.3.0 /M
