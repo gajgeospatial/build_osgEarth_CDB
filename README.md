@@ -18,7 +18,7 @@ and BOOST_DIR locations. In the repsository these have been set to D:\Developmen
 The DEV_BASE directory must exist prior to executing the scripts and all .bat files in this repsitory should be compied to that 
 directory and run from that directory. The parent directory of BOOST_DIR must also exist. 
 
-Build Tools
+Build Tools (needed for complete build) (must be in path)
 Visual Studio 2022
 Cuda
 Perl
@@ -26,7 +26,6 @@ nmake
 nasm
 cmake
 
-Note to self: Add rocksdb, glew, basisu
 
 To pull and build use a visual studio x64 Native command prompt window and execute pull_and_Build_osgearth_CDB.bat
 

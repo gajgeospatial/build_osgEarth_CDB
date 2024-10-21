@@ -11,6 +11,9 @@ SETX DEFLATE_DIR libdeflate-1.18 /M
 SETX QHULL_DIR qhull-8.1-alpha1 /M
 SETX LIBZIP_DIR libzip-1.10.0 /M
 SETX PROTOBUF_DIR protobuf-3.7.1 /M
+SETX ROCKSDB_DIR rocksdb-6.7.4 /M
+SETX GLEW_DIR glew-2.1.0 /M
+SETX BASISU_DIR basis_universal-1.16.4 /M
 SETX SQLITE3_DIR sqlite-3.42.0 /M
 SETX ZLIB_DIR zlib-1.2.13 /M
 SETX WEBP_DIR libwebp-1.3.0 /M

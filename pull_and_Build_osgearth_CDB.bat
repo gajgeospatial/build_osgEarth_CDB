@@ -226,9 +226,9 @@ if not exist %GDAL_DIR% git clone https://github.com/gajgeospatial/gdal-3.6.4.gi
 devenv %GDAL_DIR%\msvc\gdal.sln /Build vs2022_Debug
 devenv %GDAL_DIR%\msvc\gdal.sln /Build vs2022_Release
 
-if not exist %NVTT_DIR% git clone https://github.com/gajgeospatial/nvidia-texture-tools-2.1.1.git %NVTT_DIR%
-devenv %NVTT_DIR%\msvc\NV.sln /Build vs2022_Debug
-devenv %NVTT_DIR%\msvc\NV.sln /Build vs2022_Release
+REM if not exist %NVTT_DIR% git clone https://github.com/gajgeospatial/nvidia-texture-tools-2.1.1.git %NVTT_DIR%
+REM devenv %NVTT_DIR%\msvc\NV.sln /Build vs2022_Debug
+REM devenv %NVTT_DIR%\msvc\NV.sln /Build vs2022_Release
 
 if not exist %OPENEXR_DIR% git clone https://github.com/gajgeospatial/openexr-3.1.7 %OPENEXR_DIR%
 devenv %OPENEXR_DIR%\msvc\OpenEXR.sln /Build vs2022_Debug
@@ -262,6 +262,17 @@ if not exist %PROTOBUF_DIR% git clone https://github.com/gajgeospatial/protobuf-
 devenv %PROTOBUF_DIR%\msvc\protobuf.sln /Build vs2022_Debug
 devenv %PROTOBUF_DIR%\msvc\protobuf.sln /Build vs2022_Release
 
+if not exist %ROCKSDB_DIR% git clone https://github.com/gajgeospatial/rocksdb-6.7.4.git %ROCKSDB_DIR%
+devenv %ROCKSDB_DIR%\msvc\rocksdb.sln /Build vs2022_Debug
+devenv %ROCKSDB_DIR%\msvc\rocksdb.sln /Build vs2022_Release
+
+if not exist %GLEW_DIR% git clone https://github.com/gajgeospatial/glew-2.1.0.git %GLEW_DIR%
+devenv %GLEW_DIR%\msvc\glew.sln /Build vs2022_Debug
+devenv %GLEW_DIR%\msvc\glew.sln /Build vs2022_Release
+
+if not exist %BASISU_DIR% git clone https://github.com/gajgeospatial/basis_universal-1.16.4 %BASISU_DIR%
+devenv %BASISU_DIR%\msvc\basisu.sln /Build vs2022_Debug
+devenv %BASISU_DIR%\msvc\basisu.sln /Build vs2022_Release
 
 if not exist %OSGEARTH_DIR% git clone https://github.com/gajgeospatial/osgearth-3.0.0_CDB %OSGEARTH_DIR%
 devenv %OSGEARTH_DIR%\msvc\OSGEARTH.sln /Build vs2022_Debug
