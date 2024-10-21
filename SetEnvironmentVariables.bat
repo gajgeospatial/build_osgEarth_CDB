@@ -9,6 +9,7 @@ SET LERC_DIR=lerc-4.0.0
 SET QHULL_DIR=qhull-8.1-alpha1
 SET CRYPTOPP_DIR=cryptopp-8.7.0p
 SET DEFLATE_DIR=libdeflate-1.18
+SET LIBZIP_DIR=libzip-1.10.0
 SET SQLITE3_DIR=sqlite-3.42.0
 SET ZLIB_DIR=zlib-1.2.13
 SET WEBP_DIR=libwebp-1.3.0

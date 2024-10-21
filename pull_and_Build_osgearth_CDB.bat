@@ -246,6 +246,10 @@ if not exist %LIBLAS_DIR% git clone https://github.com/gajgeospatial/libLAS-1.8.
 devenv %LIBLAS_DIR%\msvc\libLAS.sln /Build vs2022_Debug
 devenv %LIBLAS_DIR%\msvc\libLAS.sln /Build vs2022_Release
 
+if not exist %LIBZIP_DIR% git clone https://github.com/gajgeospatial/libzip-1.10.0.git %LIBZIP_DIR%
+devenv %LIBZIP_DIR%\msvc\libzip.sln /Build vs2022_Debug
+devenv %LIBZIP_DIR%\msvc\libzip.sln /Build vs2022_Release
+
 if not exist %OSG_DIR% git clone https://github.com/gajgeospatial/OpenSceneGraph-3.7.0.git %OSG_DIR%
 devenv %OSG_DIR%\msvc\OpenSceneGraph.sln /Build vs2022_Debug
 devenv %OSG_DIR%\msvc\OpenSceneGraph.sln /Build vs2022_Release
