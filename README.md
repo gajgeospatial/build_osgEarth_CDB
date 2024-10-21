@@ -24,6 +24,9 @@ Cuda
 Perl
 nmake
 nasm
+cmake
+
+Note to self: Add rocksdb, glew, basisu
 
 To pull and build use a visual studio x64 Native command prompt window and execute pull_and_Build_osgearth_CDB.bat
 
