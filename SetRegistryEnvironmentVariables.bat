@@ -56,7 +56,7 @@ SETX SDL2_DIR sdl2-2.0.3 /M
 SETX GDAL_DIR gdal-3.6.4 /M
 SETX NVTT_DIR nvidia-texture-tools-2.1.1 /M
 SETX OPENEXR_DIR openexr-3.1.7 /M
-SETX LUA52_DIR lua-5.2.3 /M
+SETX LUA52_DIR lua-5.1.4 /M
 SETX LASZIP_DIR laszip-2.2.0 /M
 SETX LIBLAS_DIR libLAS-1.8.2 /M
 SETX OSG_DIR OpenSceneGraph-3.7.0 /M
